@@ -6,3 +6,6 @@ app = FastAPI()
 def home():
     return {"status": "ok"}
 
+@app.get("/ping")
+def ping():
+    return {"message": "pong"}
